@@ -1,0 +1,16 @@
+[ {
+  "buildOrder" : 3,
+  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/3/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 2,
+  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/2/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/1/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+} ]

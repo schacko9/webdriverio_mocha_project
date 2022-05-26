@@ -1,0 +1,19 @@
+[
+    {
+        "username":"rahulshettyacademy",
+        "password":"learnign123",
+        "role": "teach"
+    },
+    {
+        "username":"academy",
+        "password":"learning",
+        "role": "consult"
+    },
+    {
+        "username":"rahulshettyacademy",
+        "password":"learning",
+        "role": "stud"
+    }
+    
+    
+]

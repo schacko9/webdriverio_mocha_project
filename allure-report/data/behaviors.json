@@ -1,0 +1,107 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Login Page - Smoke",
+    "uid" : "91025b48349a2e23",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653590740062,
+      "stop" : 1653590781036,
+      "duration" : 40974
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-101.0.4951.64" ]
+  }, {
+    "name" : "Product Page - Smoke",
+    "uid" : "64ef9e0c2b864306",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653590781037,
+      "stop" : 1653590836992,
+      "duration" : 55955
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-101.0.4951.64" ]
+  }, {
+    "name" : "Checkout Page - Smoke",
+    "uid" : "774152ad7428ddda",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653590836992,
+      "stop" : 1653590854798,
+      "duration" : 17806
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-101.0.4951.64" ]
+  }, {
+    "name" : "Login Page - Smoke",
+    "uid" : "b52ba080b9a63819",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653596232143,
+      "stop" : 1653596350129,
+      "duration" : 117986
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-101.0.4951.64" ]
+  }, {
+    "name" : "Product Page - Smoke",
+    "uid" : "9901d47b1f6d3532",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653596350130,
+      "stop" : 1653596406877,
+      "duration" : 56747
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-101.0.4951.64" ]
+  }, {
+    "name" : "Checkout Page - Smoke",
+    "uid" : "54a8239de59888e1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653596406878,
+      "stop" : 1653596440910,
+      "duration" : 34032
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ "chrome-101.0.4951.64" ]
+  } ],
+  "name" : "behaviors"
+}

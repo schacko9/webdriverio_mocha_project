@@ -1,0 +1,10 @@
+[
+    {
+        "name":"Slomo Chacko",
+        "email":"slomochacko0@gmail.com",
+        "password":"webdriverio",
+        "gender":"Female",
+        "employment":"Student",
+        "birthdate":"1998-06-10"
+    }
+]

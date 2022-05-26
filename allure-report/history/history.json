@@ -1,0 +1,203 @@
+{
+  "a67ca6af27e6275d1b85155667dca6a1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "64ef9e0c2b864306",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure/#testresult/64ef9e0c2b864306",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590781037,
+        "stop" : 1653590836992,
+        "duration" : 55955
+      }
+    }, {
+      "uid" : "aa78be6e31e21737",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/3/allure/#testresult/aa78be6e31e21737",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590781037,
+        "stop" : 1653590836992,
+        "duration" : 55955
+      }
+    }, {
+      "uid" : "25a8b7fc05f4447b",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/2/allure/#testresult/25a8b7fc05f4447b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590781037,
+        "stop" : 1653590836992,
+        "duration" : 55955
+      }
+    }, {
+      "uid" : "ef7cad58472d24c3",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/1/allure/#testresult/ef7cad58472d24c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590781037,
+        "stop" : 1653590836992,
+        "duration" : 55955
+      }
+    } ]
+  },
+  "a16327789ab5252899b3fd9e1efe3fcc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b52ba080b9a63819",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure/#testresult/b52ba080b9a63819",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653596232143,
+        "stop" : 1653596350129,
+        "duration" : 117986
+      }
+    } ]
+  },
+  "236743e26796f7096397ccf5b48493" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "91025b48349a2e23",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure/#testresult/91025b48349a2e23",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590740062,
+        "stop" : 1653590781036,
+        "duration" : 40974
+      }
+    }, {
+      "uid" : "9629ab94011d83d7",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/3/allure/#testresult/9629ab94011d83d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590740062,
+        "stop" : 1653590781036,
+        "duration" : 40974
+      }
+    }, {
+      "uid" : "8aab9278cf081090",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/2/allure/#testresult/8aab9278cf081090",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590740062,
+        "stop" : 1653590781036,
+        "duration" : 40974
+      }
+    }, {
+      "uid" : "87d9158d58f181fc",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/1/allure/#testresult/87d9158d58f181fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590740062,
+        "stop" : 1653590781036,
+        "duration" : 40974
+      }
+    } ]
+  },
+  "4109ecc27e1851953e576798eed086dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9901d47b1f6d3532",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure/#testresult/9901d47b1f6d3532",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653596350130,
+        "stop" : 1653596406877,
+        "duration" : 56747
+      }
+    } ]
+  },
+  "c2add9de2a6f68ee66d092a31e1989ec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "774152ad7428ddda",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure/#testresult/774152ad7428ddda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590836992,
+        "stop" : 1653590854798,
+        "duration" : 17806
+      }
+    }, {
+      "uid" : "afc6f5340025100f",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/3/allure/#testresult/afc6f5340025100f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590836992,
+        "stop" : 1653590854798,
+        "duration" : 17806
+      }
+    }, {
+      "uid" : "d38ccb7b7f72a8a6",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/2/allure/#testresult/d38ccb7b7f72a8a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590836992,
+        "stop" : 1653590854798,
+        "duration" : 17806
+      }
+    }, {
+      "uid" : "7c6d18bcb1398cb1",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/1/allure/#testresult/7c6d18bcb1398cb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653590836992,
+        "stop" : 1653590854798,
+        "duration" : 17806
+      }
+    } ]
+  },
+  "f24c7fc9147fab529bb19aef0b77f02e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "54a8239de59888e1",
+      "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure/#testresult/54a8239de59888e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653596406878,
+        "stop" : 1653596440910,
+        "duration" : 34032
+      }
+    } ]
+  }
+}

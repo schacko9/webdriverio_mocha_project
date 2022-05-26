@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "label[for='checkbox2']"
+}
