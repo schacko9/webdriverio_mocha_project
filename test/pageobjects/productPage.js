@@ -38,6 +38,7 @@ class ProductPage {
 
     async expects() {
         await expect($(".row div h1")).toHaveTextContaining('Shop Name')
+        await expect(browser).toHaveTitleContaining('ProtoCommerce')
     }
 
     async homeClick() {

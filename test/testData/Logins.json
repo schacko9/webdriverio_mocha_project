@@ -2,16 +2,19 @@
     {
         "username":"rahulshettyacademy",
         "password":"learnign123",
+        "accessibility": "user",
         "role": "teach"
     },
     {
         "username":"academy",
         "password":"learning",
+        "accessibility": "admin",
         "role": "consult"
     },
     {
         "username":"rahulshettyacademy",
         "password":"learning",
+        "accessibility": "user",
         "role": "stud"
     }
     

@@ -1,60 +1,30 @@
 [ {
-  "uid" : "54a8239de59888e1",
-  "name" : "Checkout Page - Smoke",
-  "time" : {
-    "start" : 1653596406878,
-    "stop" : 1653596440910,
-    "duration" : 34032
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "774152ad7428ddda",
-  "name" : "Checkout Page - Smoke",
-  "time" : {
-    "start" : 1653590836992,
-    "stop" : 1653590854798,
-    "duration" : 17806
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b52ba080b9a63819",
-  "name" : "Login Page - Smoke",
-  "time" : {
-    "start" : 1653596232143,
-    "stop" : 1653596350129,
-    "duration" : 117986
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9901d47b1f6d3532",
+  "uid" : "a185c02955031537",
   "name" : "Product Page - Smoke",
   "time" : {
-    "start" : 1653596350130,
-    "stop" : 1653596406877,
-    "duration" : 56747
+    "start" : 1653616036397,
+    "stop" : 1653616036397,
+    "duration" : 0
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "91025b48349a2e23",
+  "uid" : "35abd21467604114",
+  "name" : "Checkout Page - Smoke",
+  "time" : {
+    "start" : 1653616036398,
+    "stop" : 1653616036398,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "afa4c5b9bc858540",
   "name" : "Login Page - Smoke",
   "time" : {
-    "start" : 1653590740062,
-    "stop" : 1653590781036,
-    "duration" : 40974
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "64ef9e0c2b864306",
-  "name" : "Product Page - Smoke",
-  "time" : {
-    "start" : 1653590781037,
-    "stop" : 1653590836992,
-    "duration" : 55955
+    "start" : 1653615998084,
+    "stop" : 1653616036397,
+    "duration" : 38313
   },
   "status" : "passed",
   "severity" : "normal"

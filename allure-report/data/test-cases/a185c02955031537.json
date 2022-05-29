@@ -1,0 +1,52 @@
+{
+  "uid" : "a185c02955031537",
+  "name" : "Product Page - Smoke",
+  "fullName" : "Smoke Testing.Product Page - Smoke",
+  "historyId" : "c80341d9f19b74ba37fc0c3d49612c4a",
+  "time" : {
+    "start" : 1653616036397,
+    "stop" : 1653616036397,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Smoke Testing"
+  }, {
+    "name" : "testClass",
+    "value" : "Smoke Testing"
+  }, {
+    "name" : "testMethod",
+    "value" : "Product Page - Smoke"
+  }, {
+    "name" : "package",
+    "value" : "Smoke Testing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a185c02955031537.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1653837392135' stop='1653837564145'>
+    <name>Regression Testing</name>
+    <title>Regression Testing</title>
+    <test-cases>
+        <test-case start='1653837392135' status='broken' stop='1653837564141'>
+            <name>Login Page</name>
+            <title>Login Page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+                <parameter kind='argument' name='browser' value='chrome-101.0.4951.64'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='dc767928-11fd-45bb-ad55-104ed9162746-attachment.png' type='image/png' size='1147383'/>
+                <attachment title='Screenshot' source='01d7fb16-3e65-4c75-ac77-c5cb1c26be65-attachment.png' type='image/png' size='1156370'/>
+            </attachments>
+            <failure>
+                <message>element ("*=Checkout") still not clickable after 20000ms</message>
+                <stack-trace>Error: element ("*=Checkout") still not clickable after 20000ms
+                    at async Base.checkoutClickable (/Users/svc/Documents/webdriverio/test/pageobjects/base.js:16:9)
+                    at async Context.&lt;anonymous> (/Users/svc/Documents/webdriverio/test/specs/RegressionTest.js:27:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1653837564142' status='pending' stop='1653837564142'>
+            <name>Product Page</name>
+            <title>Product Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1653837564142' status='pending' stop='1653837564142'>
+            <name>Checkout Page</name>
+            <title>Checkout Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

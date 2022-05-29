@@ -1,80 +1,69 @@
-const loginPage = require('../pageobjects/loginPage')
-const shopPage = require('../pageobjects/productPage')
-const reviewPage = require('../pageobjects/checkoutPage')
-const expectchai = require('chai').expect
-const fs = require('fs')
-let data = JSON.parse(fs.readFileSync('test/testData/Logins.json'))
+const base =require('../pageobjects/base')
+const loginPage =require('../pageobjects/loginPage')
+const productPage =require('../pageobjects/productPage')
+const checkoutPage =require('../pageobjects/checkoutPage')
 
 
 
 describe('Smoke Testing', async () => {
-    
-   
+      
     it('Login Page - Smoke', async () => {
         await browser.url('/loginpagePractise/')
-        console.log(await browser.getTitle())
-        await expect(browser).toHaveTitleContaining('Rahul Shetty Academy')
+        await loginPage.expects()
+        
+        await loginPage.login("rahulshettyacademy", "learning")
 
-        await $("#username").setValue("rahulshettyacademy")
-        await $("#password").setValue("learning")
-        await $("#signInBtn").click()
+        await loginPage.userClick()
+        await loginPage.modalDisplayed()
+        await loginPage.cancelButton()
 
-        await browser.pause(4000)
-        let link = await $("*=Checkout")
-        await link.waitForExist()
-        await expect(browser).toHaveTitleContaining('ProtoCommerce')
-        console.log(await browser.getTitle())
+        await loginPage.userClick()
+        await loginPage.modalDisplayed()
+        await loginPage.okButton() 
+       
+        await loginPage.adminClick()
+        await loginPage.modalExpects()
+
+        await loginPage.signInClick()
+
+        await base.checkoutClickable()
+        await base.titleExpects('ProtoCommerce')
     })
 
 
-    it('Product Page - Smoke', async () => {
+    xit('Product Page - Smoke', async () => {
         await browser.url('/angularpractice/shop')
-
-        await $('=Home').click()
-        let link = await $("h1=Protractor Tutorial")
-        await link.waitForExist()
-
-        await $('=Shop').click()
-        let link2 = await $("*=Checkout")
-        await link2.waitForExist()
-
-        await $('=Category 1').click()
-        await link.waitForExist()
-
-        await $('=Shop').click()
-        await link2.waitForExist()
-        await link2.click()
+        await base.checkoutClickable()
+        await productPage.expects()
+        
+        await productPage.homeClick()
+        await productPage.shopClick()
+        await productPage.categoryClick()
+        await productPage.shopClick()
     })
 
 
-    it('Checkout Page - Smoke', async () => {
+    xit('Checkout Page - Smoke', async () => {
         await browser.url('/angularpractice/shop')
-        await $("*=Checkout").click()
+        await base.checkoutClickable()
+        await productPage.expects()
 
-        let link = await $("button.btn-default")
-        await link.waitForExist()
-        await link.click()
-        browser.pause(1000)
+        await base.checkboxClick()
+        await checkoutPage.continueShoppingClick()
 
-        let link2 = await $("*=Checkout")
-        await link2.waitForExist()
-        await link2.click()
-        browser.pause(1000)
+        await base.checkoutClickable()
+        await base.checkoutClick()
 
-        let link3 = await $("button.btn-success")
-        await link3.waitForExist()
-        await link3.click()
-        browser.pause(1000)
+        await checkoutPage.purchaseClick()
 
+        await checkoutPage.expect()
+        await checkoutPage.setDeliveryLocation('1234 Grovestreet Lane')
+        await checkoutPage.waitOnEllipsis()
+        await checkoutPage.termsClick()
+        await checkoutPage.purchaseClick()
 
-        await expect($("//label[@for='country']")).toHaveTextContaining("delivery")
-        await $("input.form-control").setValue('1234 Grovestreet Lane')
-        await $("label[for='checkbox2']").click()
-        await $("input.btn-success").click()
-
-        await $('div.alert').waitForDisplayed()
-        await expect($('div.alert')).toHaveTextContaining("Success!")
-        await $("a.close").click()
-        browser.pause(1000)
+        await base.alertDisplayed()
+        await base.alertExpects()
+        await base.alertClose()        
     })
 })

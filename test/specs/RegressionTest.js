@@ -2,52 +2,36 @@ const base =require('../pageobjects/base')
 const loginPage =require('../pageobjects/loginPage')
 const productPage =require('../pageobjects/productPage')
 const checkoutPage =require('../pageobjects/checkoutPage')
-const expectchai = require('chai').expect
 const fs =require('fs')
 let login = JSON.parse(fs.readFileSync('test/testData/Logins.json'))
 let info = JSON.parse(fs.readFileSync('test/testData/Info.json'))
-let products =JSON.parse(fs.readFileSync('test/testData/Products.json'))
-
-// Smoke-Sanity Testing Block ? npx wdio run wdio.conf.js --mochaOpts.grep Smoke
+let productlist =JSON.parse(fs.readFileSync('test/testData/Products.json'))
 
 
 
-describe('Regression Testing',async()=>
-{
+describe('Regression Testing',async()=>{
 
-    login.forEach(({username, password, role}) =>{
+    login.forEach(({username, password, accessibility, role}) =>{
     it('Login Page', async()=> {
         await browser.url('/loginpagePractise/')
         await loginPage.expects()
 
         await loginPage.login(username, password)
-
-        await loginPage.studentClick()
-        await loginPage.modalDisplayed()
-        await loginPage.cancelButton()
-
-        await loginPage.studentClick()
-        await loginPage.modalDisplayed()
-        await loginPage.okButton() 
-       
-        await loginPage.adminClick()
-        await loginPage.modalExpects()
-
+        await loginPage.accessibilityClick(accessibility)
         await loginPage.dropdownSelection(role)
 
         await loginPage.checkboxClick()
         await loginPage.signInClick()
         
-        await base.checkboxClickable()
+        await base.checkoutClickable()
         await base.titleExpects('ProtoCommerce')
     }) })
 
 
     info.forEach(({name, email, password, gender, employment, birthdate}) =>{
-    it('Product Page', async () => {
+    xit('Product Page', async () => {
         await browser.url('/angularpractice/shop')
-        await base.checkboxClickable()
-        await base.titleExpects('ProtoCommerce')
+        await base.checkoutClickable()
         await productPage.expects()
 
         await productPage.homeClick()
@@ -70,14 +54,14 @@ describe('Regression Testing',async()=>
     }) })
 
 
-    products.forEach(({productList}) =>{
-    it('Checkout Page', async () => {
+    productlist.forEach(({product}) =>{
+    xit('Checkout Page', async () => {
         await browser.url('/angularpractice/shop')
-        await base.checkboxClickable()
+        await base.checkoutClickable()
         await base.titleExpects('ProtoCommerce')
-
-        await checkoutPage.addProductToCart(productList)
-        await base.checkboxClick()
+        
+        await checkoutPage.addProductToCart(product)
+        await base.checkoutClick()
 
         await checkoutPage.removeProduct('Nokia Edge')
         await checkoutPage.statusCheck() 

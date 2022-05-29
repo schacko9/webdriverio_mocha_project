@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "devDependencies": {
-        "@wdio/allure-reporter": "^7.0.0",
+        "@wdio/allure-reporter": "^7.14.1",
         "@wdio/cli": "^7.19.7",
         "@wdio/local-runner": "^7.19.7",
         "@wdio/mocha-framework": "^7.19.7",
@@ -14,10 +14,9 @@
     },
     "scripts": {
         "Test":           "npx wdio run wdio.conf.js",
-        "AlternateTest":  "npx wdio run wdio.conf2.js",
         "SmokeTest":      "npx wdio run wdio.conf.js --suite Smoke",
         "RegressionTest": "npx wdio run wdio.conf.js --suite Regression",
-        "GenerateReport": "allure generate allure-results --clean && allure open"
+        "GenerateReport": "allure generate --clean allure-results && allure open"
     },
     "dependencies": {
         "chai": "^4.3.6"

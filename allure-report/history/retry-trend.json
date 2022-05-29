@@ -1,31 +1,4 @@
 [ {
-  "buildOrder" : 4,
-  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/4/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "run" : 6,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 3,
-  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/3/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "run" : 3,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 2,
-  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/2/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "run" : 3,
-    "retry" : 0
-  }
-}, {
-  "buildOrder" : 1,
-  "reportUrl" : "http://localhost:8080/job/Webdriverio_Project/1/allure",
-  "reportName" : "AllureReport",
   "data" : {
     "run" : 3,
     "retry" : 0

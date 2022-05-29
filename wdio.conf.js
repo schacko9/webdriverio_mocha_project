@@ -22,6 +22,7 @@ exports.config = {
     //x
     reporters: [['allure', {
         outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: false,
     }]],
     suites: {

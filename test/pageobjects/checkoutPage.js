@@ -1,125 +1,112 @@
 const expectchai = require('chai').expect
 
-class checkoutPage
-{
+class checkoutPage {
+    
     get cards() {
         return $$("div[class='card h-100']")
     }
-    get productNames()
-    {
+    get productNames() {
         return $$(".media-body h4 a")
     }
-    get productPrices()
-    {
+    get productPrices() {
         return $$("//tr/td[4]/strong")
     }
-    get stockText()
-    {
+    get stockText() {
         return $$(".media div strong")
     }
-    get remove()
-    {
+    get remove() {
         return $$(".btn-danger")
     }
-    get totalPrice()
-    {
+    get totalPrice() {
         return $("h3 strong")
     }
-    get checkout()
-    {
+    get checkout() {
         return $("button.btn-success")
     }
-    get text()
-    {
+    get text() {
         return $("//label[@for='country']")
     }
-    get delivery()
-    {
+    get delivery() {
         return $("input.form-control")
     }
-    get ellipsis()
-    {
+    get ellipsis() {
         return $(".lds-ellipsis")
     }
-    get terms()
-    {
+    get terms() {
         return $("label[for='checkbox2']")
     }
-    get purchase()
-    {
-        return $("input.btn-success")
+    get continueShopping() {
+        return $(".btn-default")
+    }
+    get purchase() {
+        return $(".btn-success")
     }
 
     async addProductToCart(products) {
-        for (let i=0; i<await this.cards.length; i++) {
+
+        for (let i=0; i < (await this.cards.length); i++) {
             const card = await this.cards[i].$("div h4 a")
-            if (products.includes(await card.getText())) {
+            const text = await card.getText()
+            if (products.includes(text)) {
                 await this.cards[i].$(".card-footer button").click()
             }
         }
-        await browser.pause(1000)
     }
 
-    async removeProduct(phone)
-    {
-        for(let i=0; i< await this.productNames.length; i++){
-            console.log((await this.productNames[i].getText()))
-            if((await this.productNames[i].getText()) == phone){
-                console.log((await this.productNames[i].getText()))
-                await this.remove[i].click() 
+    async removeProduct(phone) {
+        for (let i = 0; i < await this.productNames.length; i++) {
+            if ((await this.productNames[i].getText()) == phone) {
+                await this.remove[i].click()
             }
         }
-    }  
-    
-    async statusCheck()
-    {
+    }
+
+    async statusCheck() {
         let count = 0;
-        for(let i=0; i< await this.stockText.length; i++){
-            if((await this.stockText[i].getText()) == 'In Stock'){
-                count+=1
+        for (let i = 0; i < await this.stockText.length; i++) {
+            if ((await this.stockText[i].getText()) == 'In Stock') {
+                count += 1
             }
         }
-        await expectchai(count).to.equal(await this.stockText.length)   
+        await expectchai(count).to.equal(await this.stockText.length)
     }
 
-    async priceCheck()
-    {
-        const sumOfProducts = (await Promise.all(await this.productPrices.map(async (productPrice)=> parseInt((await productPrice.getText()).split(".")[1].trim()))))
-            .reduce((acc,price)=>acc+price,0)
+    async priceCheck() {
+        const sumOfProducts = (await Promise.all(await this.productPrices.map(async (productPrice) => parseInt((await productPrice.getText()).split(".")[1].trim()))))
+            .reduce((acc, price) => acc + price, 0)
         const TotalValue = await this.totalPrice.getText()
         const totalIntValue = parseInt(TotalValue.split(".")[1].trim())
         await expectchai(sumOfProducts).to.equal(totalIntValue)
-    }  
+    }
 
-    async goToCheckout()
-    {
+    async goToCheckout() {
         await this.checkout.click()
         await browser.pause(1000)
     }
 
-    async expect()
-    {
+    async expect() {
         await expect(this.text).toHaveTextContaining("delivery")
     }
 
-    async setDeliveryLocation(value)
-    {
+    async setDeliveryLocation(value) {
         await this.delivery.setValue(value)
     }
 
-    async waitOnEllipsis()
-    {
-        await this.ellipsis.waitForExist({reverse: true})
+    async waitOnEllipsis() {
+        await this.ellipsis.waitForExist({ reverse: true })
     }
-    async termsClick()
-    {
+    async termsClick() {
         await this.terms.click()
+        browser.pause(1000)
     }
-    async purchaseClick()
-    {
+    async continueShoppingClick() {
+        await this.continueShopping.click()
+        browser.pause(1000)
+    }
+    async purchaseClick() {
         await this.purchase.click()
+        browser.pause(1000)
     }
-
 }
 
 

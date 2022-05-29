@@ -1,6 +1,6 @@
 class Base{
     
-    get checkbox() {
+    get checkout() {
         return $("*=Checkout")
     }
 
@@ -12,12 +12,12 @@ class Base{
         return $("a.close")
     }
 
-    async checkboxClickable() {
-        await this.checkbox.waitForClickable()
+    async checkoutClickable() {
+        await this.checkout.waitForClickable()
     }
 
-    async checkboxClick() {
-        await this.checkbox.click()
+    async checkoutClick() {
+        await this.checkout.click()
         await browser.pause(2000)
     }
 

@@ -48,20 +48,36 @@ class LoginPage {
         await this.userName.setValue(username)
         await this.password.setValue(password)
     }
+    async accessibilityClick(value, flag){
+        if(value == "admin"){
+            const admin = this.radioButtons[0]
+            await admin.$("span").click()
+            await expect(this.modal).not.toBeDisplayed() 
+        }
+        else if(value == "user"){
+            const user = this.radioButtons[1]
+            await user.$("span").click()
+            await this.modal.waitForDisplayed()
+            browser.pause(1000)
+            await this.ok.click()
+        } 
+        else {
+            console.log("Not Valid!")
+        }
+    }
 
     async adminClick() {
         const admin = this.radioButtons[0]
         await admin.$("span").click()
     }
 
-    async studentClick() {
-        const student = this.radioButtons[1]
-        await student.$("span").click()
+    async userClick() {
+        const user = this.radioButtons[1]
+            await user.$("span").click()
     }
-    
+
     async modalDisplayed() {
         await this.modal.waitForDisplayed()
-
     }
 
     async modalExpects() {
@@ -70,10 +86,12 @@ class LoginPage {
     }
 
     async cancelButton() {
+        browser.pause(1000)
         await this.cancel.click()
     }
 
     async okButton() {
+        browser.pause(1000)
         await this.ok.click()
     }
 
