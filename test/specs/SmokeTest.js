@@ -31,7 +31,7 @@ describe('Smoke Testing', async () => {
     })
 
 
-    xit('Product Page - Smoke', async () => {
+    it('Product Page - Smoke', async () => {
         await browser.url('/angularpractice/shop')
         await base.checkoutClickable()
         await productPage.expects()
@@ -43,7 +43,7 @@ describe('Smoke Testing', async () => {
     })
 
 
-    xit('Checkout Page - Smoke', async () => {
+    it('Checkout Page - Smoke', async () => {
         await browser.url('/angularpractice/shop')
         await base.checkoutClickable()
         await productPage.expects()

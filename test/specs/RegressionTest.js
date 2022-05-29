@@ -29,7 +29,7 @@ describe('Regression Testing',async()=>{
 
 
     info.forEach(({name, email, password, gender, employment, birthdate}) =>{
-    xit('Product Page', async () => {
+    it('Product Page', async () => {
         await browser.url('/angularpractice/shop')
         await base.checkoutClickable()
         await productPage.expects()
@@ -55,7 +55,7 @@ describe('Regression Testing',async()=>{
 
 
     productlist.forEach(({product}) =>{
-    xit('Checkout Page', async () => {
+    it('Checkout Page', async () => {
         await browser.url('/angularpractice/shop')
         await base.checkoutClickable()
         await base.titleExpects('ProtoCommerce')
