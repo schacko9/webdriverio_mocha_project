@@ -1,15 +1,4 @@
 {
-  "total" : 1,
-  "items" : [ {
-    "uid" : "7b39f9c1549df9be7ce9dc4dda186e11",
-    "name" : "Smoke Testing",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 3
-    }
-  } ]
+  "total" : 0,
+  "items" : [ ]
 }

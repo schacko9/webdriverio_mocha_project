@@ -16,7 +16,7 @@
         "Test":           "npx wdio run wdio.conf.js",
         "SmokeTest":      "npx wdio run wdio.conf.js --suite Smoke",
         "RegressionTest": "npx wdio run wdio.conf.js --suite Regression",
-        "GenerateReport": "allure generate --clean allure-results && allure open"
+        "GenerateReport": "allure generate allure-results --clean && allure open"
     },
     "dependencies": {
         "chai": "^4.3.6"

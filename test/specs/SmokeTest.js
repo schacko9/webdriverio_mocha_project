@@ -48,7 +48,7 @@ describe('Smoke Testing', async () => {
         await base.checkoutClickable()
         await productPage.expects()
 
-        await base.checkboxClick()
+        await base.checkoutClick()
         await checkoutPage.continueShoppingClick()
 
         await base.checkoutClickable()
