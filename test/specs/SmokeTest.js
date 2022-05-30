@@ -9,7 +9,6 @@ describe('Smoke Testing', async () => {
       
     it('Login Page - Smoke', async () => {
         await browser.url('/loginpagePractise/')
-        await loginPage.expects()
         
         await loginPage.login("rahulshettyacademy", "learning")
 
@@ -34,7 +33,6 @@ describe('Smoke Testing', async () => {
     it('Product Page - Smoke', async () => {
         await browser.url('/angularpractice/shop')
         await base.checkoutClickable()
-        await productPage.expects()
         
         await productPage.homeClick()
         await productPage.shopClick()
@@ -46,7 +44,6 @@ describe('Smoke Testing', async () => {
     it('Checkout Page - Smoke', async () => {
         await browser.url('/angularpractice/shop')
         await base.checkoutClickable()
-        await productPage.expects()
 
         await base.checkoutClick()
         await checkoutPage.continueShoppingClick()
